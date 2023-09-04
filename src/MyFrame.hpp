@@ -1,5 +1,6 @@
 #include <wx/wxprec.h>
 #include <wx/setup.h>
+#include <wx/mstream.h>
 
 #include <opencv2/opencv.hpp>
 
@@ -10,10 +11,9 @@
 class MyFrame : public wxFrame
 {
 public:
+    char *imageData;
     MyFrame();
 
 private:
-    void OnHello(wxCommandEvent &event);
-    void OnExit(wxCommandEvent &event);
-    void OnAbout(wxCommandEvent &event);
+    void OnOpenFile(wxCommandEvent &event);
 };
