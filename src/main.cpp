@@ -1,3 +1,3 @@
-#include "MyApp.hpp"
+#include "App.h"
 
-wxIMPLEMENT_APP(MyApp);
+wxIMPLEMENT_APP(App);

@@ -1,12 +1,13 @@
 # legendary-octo-sniffle
-A GUI application in C++ that will hopefully evolve into something more
+
+A GUI application for loading PNG images and applying all sorts of 
 
 
 ## how to build
 
 1. clone vcpkg
 2. set VCPKG_ROOT in `~/.zshrc` or `~/.bashrc` or `~/.bash_profile`
-3. install packages: `vcpkg install [packages]`
+3. install packages (macos): `brew install wxwidgets opencv`
 4. `cmake -B ./build -S . -DCMAKE_CXX_FLAGS="$(wx-config --cxxflags)"`
 5. `cmake --build ./build`
 
